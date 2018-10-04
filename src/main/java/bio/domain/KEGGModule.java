@@ -7,6 +7,7 @@ public class KEGGModule {
 
 
     private String module;
+    private List<String> kosFromEC;
     private List<String> kos;
     private boolean isComplete;
 
@@ -34,5 +35,15 @@ public class KEGGModule {
 
     public void setComplete(boolean complete) {
         isComplete = complete;
+    }
+
+    public List<String> getKosFromEC() {
+        if (kosFromEC == null)
+            kosFromEC = new ArrayList<String>();
+        return kosFromEC;
+    }
+
+    public void setKosFromEC(List<String> kosFromEC) {
+        this.kosFromEC = kosFromEC;
     }
 }
